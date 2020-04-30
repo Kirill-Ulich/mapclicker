@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of points</title>
+</head>
+<body>
+
+{% if points %}
+    <h3>Points</h3>
+
+    {% for point in points %}
+        <p>{{ point.pointer }}</p>
+    {% endfor %}
+
+{% endif %}
+
+</body>
+</html>
